@@ -1,0 +1,180 @@
+/***** CSS GUIDE ACHAT ******/
+/* === root/html === */
+:root {
+    /* palette couleur */
+    --full-white: #fff;
+    --main-white: #f1f1f1;
+    --shade-white: #b7b7b7;
+    --full-black: #000000;
+    --main-black: #333;
+    --main-gray: #aaa;
+    --main-shadow: #292929;
+    --dark-yellow: #f4cb38;
+    --amazon-yellow: #f7ca00; /* BTN */
+    --amazon-orange: #fa8900; /* BTN */
+
+    /* Fonts */
+    --font-title: "Abril Fatface", cursive;
+    --font-base: "Poppins", sans-serif;
+
+    /* Font-size */
+    --size-title: calc(2.5rem + 3.5vw);
+    --size-sub-title: calc(1.5rem + 2vw);
+    --size-section-title: calc(1.5rem + 2vw);
+    --size-p: calc(0.2rem + 1vw);
+    --text-sm: 1.4rem;
+    --text-base: 1.6rem;
+    --text-md: 1.8rem;
+    --text-lg: 2rem; /* 20px */
+    --text-xl: 2.4rem; /* 24px */
+    --text-2xl: 3rem; /* 30px */
+    --text-3xl: 3.6rem;
+    --text-4xl: 4.2rem;
+    --text-5xl: 5rem;
+    --text-6xl: 6rem;
+    --text-7xl: 7.2rem;
+
+    /* Spacing */
+    --space-1: 0.1rem;
+    --space-2: 0.2rem;
+    --space-4: 0.4rem;
+    --space-6: 0.6rem;
+    --space-8: 0.8rem;
+    --space-10: 1rem;
+    --space-12: 1.2rem;
+    --space-16: 1.6rem;
+    --space-20: 2rem;
+    --space-28: 2.8rem;
+    --space-36: 3.6rem;
+    --space-44: 4.4rem;
+    --space-52: 5.2rem;
+    --space-60: 6rem;
+    --space-72: 7.2rem;
+    --space-84: 8.4rem;
+    --space-96: 9.6rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+}
+/*=== setting Progress ===*/
+#progress {
+    width: 100%;
+    height: 95vh;
+    /* padding: 150px 0; */
+    border-top: 1px dashed #000;
+}
+#progress h2 {
+    font-size: calc(1.5rem + 2vw);
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Kaushan Script";
+}
+/*=== setting Cartes ===*/
+#prix {
+    height: 100vh;
+    border-top: 1px dashed #000;
+}
+/* responsive */
+@media screen and (max-width: 992px) {
+    #prix {
+        height: auto;
+    }
+}
+.offreH2 {
+    font-size: calc(1.5rem + 2vw);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: "Kaushan Script";
+}
+#cartes {
+    padding: 50px 0 100px 0;
+}
+.threeCards {
+    width: 300px;
+    height: 520px;
+    margin: 30px auto;
+    position: relative;
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px #2f2d2dd4;
+}
+.threeCards:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 15px 20px #2f2d2dee;
+}
+.header {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(216, 216, 216, 0.5);
+}
+.header h2 {
+    font-size: calc(0.7rem + 1vw);
+    margin: 0;
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: "Lato";
+}
+#spanPrix {
+    font-size: calc(0.9rem + 1vw);
+    font-weight: 600;
+}
+.type {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(2, 2, 2, 0.5);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.type h2 {
+    font-size: calc(1.3rem + 1vw);
+    text-align: center;
+    color: #fff;
+    font-family: "Kaushan Script";
+    margin: 0;
+    position: relative;
+    top: 30px;
+}
+.details {
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    font-family: "Lato";
+    background-color: #fff;
+    height: 60px;
+    transition: 0.2s ease-in;
+}
+.details:hover {
+    background-color: rgba(181, 208, 230, 0.5);
+}
+/* setting btn */
+#btn {
+    background-color: #fff;
+    height: 80px;
+}
+#btn a {
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 50px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    top: 10px;
+    border: 1px solid #22a7f0;
+    border-radius: 9999px;
+    transition: all 0.2s ease-in;
+}
+#btn a:hover {
+    color: #fff;
+    background-color: rgba(6, 136, 206, 0.8);
+    transition: all 0.2s ease-in;
+}

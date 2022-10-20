@@ -1,0 +1,591 @@
+ html {
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+}
+/*=== setting header ===*/
+header {
+    background: url(../img/bgphotshop.png);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+/* color navbar */
+.navbar {
+    background-color: rgb(69, 102, 102);
+}
+
+.header-container {
+    max-width: 1330px;
+}
+
+/* setting navbar-brand */
+.navbar-brand {
+    color: #fff !important;
+    font-size: 45px !important ;
+    font-family: "Kaushan Script" !important;
+    transition: all 0.4s ease;
+}
+
+/* setting animation resize navbar */
+.navbar.resize {
+    height: auto;
+    opacity: 0.9;
+    transition: all 0.4s ease;
+}
+.navbar.resize .navbar-brand {
+    font-size: 27px !important;
+    transition: all 0.4s ease;
+}
+.navbar.resize a {
+    font-size: 18px;
+    transition: all 0.4s ease;
+} /* ---------------------- */
+
+.navbar-nav {
+    margin-left: auto;
+}
+.nav-item {
+    margin-right: 20px;
+}
+
+/* setting a */
+.nav-link {
+    color: #fff !important;
+    font-family: "Lato" !important;
+    font-size: 22px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+.dropdown-item {
+    color: rgb(15, 15, 15) !important;
+    font-family: "Lato" !important;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* ----------- */
+
+/* Setting txt */
+.text-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 95vh;
+    margin-left: calc(2rem + 3vw);
+}
+.preTxt {
+    font-size: calc(1.2rem + 2vw);
+    font-family: "Lato" !important;
+    color: #2f2d2d;
+    line-height: calc(2rem + 4vw);
+}
+.text-intro h1 {
+    font-size: calc(3.5rem + 4vw);
+    color: #2f2d2d;
+    margin-bottom: calc(1rem + 1vw);
+    font-weight: 500;
+    line-height: calc(4rem + 5vw);
+    font-family: "Kaushan Script", sans-serif;
+}
+
+/* responsive header */
+@media screen and (max-width: 990px) {
+    .text-intro {
+        align-items: center;
+        padding: 0 20px;
+    }
+    .preTxt p {
+        text-align: center;
+    }
+    .text-intro h1 {
+        text-align: center;
+    }
+    .btn-center {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* setting nav */
+    .nav-item a {
+        font-size: 18px !important;
+        font-weight: 500;
+    }
+}
+
+/*=== setting scroll to top ===*/
+/* btn scrollup */
+.btn-scrollup {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+}
+.icone {
+    width: 60px;
+}
+.btn-scrollup.active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+/* responsive scrollup */
+@media screen and (max-width: 550px) {
+    .btn-scrollup {
+        width: 60px;
+        height: 60px;
+    }
+    .icone {
+        width: 50px;
+    }
+    .btn-scrollup.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*=== setting A propos ===*/
+#aPropos {
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-bottom: 1px dashed #2f2d2d;
+}
+#aPropos h3 {
+    font-size: calc(1.5rem + 2vw);
+    font-family: "Kaushan Script";
+}
+/* responsive A propos */
+@media screen and (max-width: 760px) {
+    #aPropos {
+        height: 70vh;
+        padding-top: 75px;
+        padding-bottom: 50px;
+        border-bottom: 1px dashed #2f2d2d;
+    }
+}
+/*=== setting Trois Icones ===*/
+#icones {
+    height: 95vh;
+    padding-top: 200px;
+}
+#icones h2 {
+    font-family: "Lato" !important;
+    font-size: calc(1.1rem + 2vw);
+}
+#icones p {
+    font-family: "Lato" !important;
+    font-size: 18px;
+}
+/* responsive A propos */
+@media screen and (max-width: 760px) {
+    #icones h2 {
+        text-align: center;
+    }
+}
+/*=== setting First banniere ===*/
+#ban1 {
+    height: 95vh;
+    position: relative;
+    background: url(../img/banniere1.png);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 200px;
+}
+#ban1 h2 {
+    font-size: calc(1.5rem + 2vw);
+    font-family: "Kaushan Script";
+    margin: 0 0 30px;
+}
+#ban1 p {
+    font-size: calc(0.7rem + 1vw);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 50px !important;
+}
+
+/*=== setting Nos projets Lightbox ===*/
+#nosprojets {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#nosprojets h1 {
+    font-size: calc(1.5rem + 2vw);
+    font-family: "Kaushan Script";
+    padding-bottom: 20px;
+}
+#nosprojets p {
+    font-size: calc(0.7rem + 1vw);
+    font-family: "Lato", sans-serif;
+    padding-bottom: 40px;
+}
+#nosprojets .row {
+    margin: 0 auto;
+}
+
+/*=== setting carousel ===*/
+#carouselExampleControls {
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+}
+#carouselExampleControls .carousel-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+#carouselExampleControls .carousel-inner h2 {
+    font-size: calc(1.5rem + 2vw);
+    font-family: "Kaushan Script";
+    margin: 0;
+    padding-bottom: 20px;
+}
+#carouselExampleControls .carousel-inner p {
+    font-size: calc(0.7rem + 1vw);
+    font-family: "Lato", sans-serif;
+    padding-bottom: 30px;
+}
+/*=== setting carousel ban2 ===*/
+#carouselBan2 {
+    height: 95vh;
+    min-height: 300px;
+    position: relative;
+    background: url(../img/banniere2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#carouselBan2 span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #2f2d2d;
+    background-color: #2f2d2d8e !important;
+}
+#carouselTxt {
+    margin-top: 300px;
+    font-size: calc(0.7rem + 1vw);
+    font-family: "Lato", sans-serif;
+}
+/*=== setting Progress ===*/
+#progress {
+    width: 100%;
+    height: 95vh;
+    /* padding: 150px 0; */
+    border-top: 1px dashed #000;
+}
+#progress h2 {
+    font-size: calc(1.5rem + 2vw);
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Kaushan Script";
+}
+/*=== setting Cartes ===*/
+#prix {
+    height: 100vh;
+    border-top: 1px dashed #000;
+}
+/* responsive */
+@media screen and (max-width: 1000px) {
+    #prix {
+        height: auto;
+    }
+}
+.offreH2 {
+    font-size: calc(1.5rem + 2vw);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: "Kaushan Script";
+}
+#cartes {
+    padding: 50px 0 100px 0;
+}
+.threeCards {
+    width: 300px;
+    height: 520px;
+    margin: 30px auto;
+    position: relative;
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px #2f2d2dd4;
+}
+.threeCards:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 15px 20px #2f2d2dee;
+}
+.header {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(216, 216, 216, 0.5);
+}
+.header h2 {
+    font-size: calc(0.7rem + 1vw);
+    margin: 0;
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: "Lato";
+}
+#spanPrix {
+    font-size: calc(0.9rem + 1vw);
+    font-weight: 600;
+}
+.type {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(2, 2, 2, 0.5);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.type h2 {
+    font-size: calc(1.3rem + 1vw);
+    text-align: center;
+    color: #fff;
+    font-family: "Kaushan Script";
+    margin: 0;
+    position: relative;
+    top: 30px;
+}
+.details {
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    font-family: "Lato";
+    background-color: #fff;
+    height: 60px;
+    transition: 0.2s ease-in;
+}
+.details:hover {
+    background-color: rgba(181, 208, 230, 0.5);
+}
+/* setting btn */
+#btn {
+    background-color: #fff;
+    height: 80px;
+}
+#btn a {
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 50px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    top: 10px;
+    border: 1px solid #22a7f0;
+    border-radius: 9999px;
+    transition: all 0.2s ease-in;
+}
+#btn a:hover {
+    color: #fff;
+    background-color: rgba(6, 136, 206, 0.8);
+    transition: all 0.2s ease-in;
+}
+/*=== setting Nos Clients ===*/
+#clients {
+    width: 100%;
+    height: 95vh;
+    border-top: 1px dashed #000;
+}
+#clients h2 {
+    font-size: calc(1.5rem + 2vw);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: "Kaushan Script";
+}
+/*=== setting contact ===*/
+#contact {
+    width: 100%;
+    height: 95vh;
+    border-top: 1px dashed #000;
+}
+#contact h2 {
+    font-size: calc(1.5rem + 2vw);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: "Kaushan Script";
+}
+#contact span i {
+    font-size: 35px;
+}
+
+/**** Scroll top ****/
+.scrolltop {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    color: black;
+    background: #fff;
+    border-radius: 0.4rem;
+    z-index: 100;
+    transition: 0.4s;
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.scrolltop:hover {
+    color: #fff;
+    background-color: #000000b0;
+    transition: 0.4s;
+}
+
+.scrolltop__icon {
+    font-size: 50px;
+}
+
+/* Show scrolltop */
+.active {
+    visibility: visible;
+}
+
+/* === section cookie === */
+#cookieModal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+}
+#cookieModal.active {
+    display: flex;
+}
+#cookieContent {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cookieContent img {
+    display: block;
+    width: 100px;
+    margin: 30px 0 10px 0;
+}
+#cookieContent p {
+    text-align: justify;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 30px;
+}
+#cookieContent a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+/* btn */
+#acceptCookie,
+#refusedCookie {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid var(--main-black);
+    border-radius: 3px;
+}
+#acceptCookie {
+    color: var(--main-white);
+    background-color: limegreen;
+    transition: 0.2s ease-in-out;
+}
+#acceptCookie:hover {
+    color: #f1f1f1;
+    font-weight: bold;
+    background-color: rgb(26, 106, 26);
+    transition: 0.2s ease-in-out;
+}
+#refusedCookie {
+    color: var(--main-white);
+    background-color: crimson;
+    margin-left: 15px;
+    transition: 0.2s ease-in-out;
+}
+#refusedCookie:hover {
+    color: #f1f1f1;
+    font-weight: bold;
+    background-color: darkred;
+    transition: 0.2s ease-in-out;
+}
+/* show popup */
+@media only screen and (max-width: 750px) {
+    #cookieContent p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    #cookieContent a {
+        font-size: 20px;
+    }
+    #cookieContent img {
+        width: 60px;
+        margin: 20px auto;
+    }
+    #cookiePopup {
+        width: 100%;
+    }
+    .hide {
+        bottom: 2em;
+        right: 0;
+    }
+    .show {
+        right: 0;
+        bottom: 0;
+    }
+    #acceptCookie,
+    #refusedCookie {
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

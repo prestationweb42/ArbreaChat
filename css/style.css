@@ -70,10 +70,6 @@ header {
     background-color: rgb(69, 102, 102);
 }
 
-/* .header-container {
-    max-width: 1330px;
-} */
-
 /* setting navbar-brand */
 .navbar-brand {
     color: #fff !important;
@@ -129,7 +125,7 @@ header {
     height: 95vh;
     margin-left: calc(2rem + 3vw);
 }
-.preTxt {
+.heroP {
     width: 60%;
     font-size: calc(1.2rem + 2vw);
     font-family: "Lato" !important;
@@ -152,13 +148,17 @@ header {
 }
 
 /* responsive header */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
     .text-intro {
         align-items: center;
         padding: 0 20px;
     }
-    .preTxt p {
+    .heroP {
+        width: 90%;
         text-align: center;
+    }
+    .text-intro {
+        margin: none;
     }
     .text-intro h1 {
         text-align: center;
@@ -173,6 +173,34 @@ header {
     .nav-item a {
         font-size: 18px !important;
         font-weight: 500;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: var(--text-3xl) !important ;
+    }
+    .btn-center a {
+        font-size: var(--text-lg);
+    }
+}
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: var(--text-2xl) !important ;
+    }
+    .text-intro h1 {
+        font-size: var(--text-2xl) !important ;
+    }
+    .btn-center {
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--space-12);
+    }
+    .btn-center .btn{
+        width: 150px;
+        margin-top: var(--space-12);
+    }
+    .btn-center a {
+        font-size: var(--text-sm);
     }
 }
 
@@ -190,7 +218,7 @@ header {
     font-family: "Kaushan Script";
 }
 /* responsive A propos */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     #aPropos {
         height: 70vh;
         padding-top: 75px;
@@ -212,7 +240,7 @@ header {
     font-size: 18px;
 }
 /* responsive A propos */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     #icones h2 {
         text-align: center;
     }
@@ -322,7 +350,7 @@ header {
     border-top: 1px dashed #000;
 }
 /* responsive */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     #prix {
         height: auto;
     }
@@ -576,13 +604,13 @@ header {
     transition: 0.2s ease-in-out;
 }
 /* show popup */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     #cookieContent p {
-        font-size: 18px;
+        font-size: var(--text-sm);
         margin-bottom: 20px;
     }
     #cookieContent a {
-        font-size: 20px;
+        font-size: var(--text-sm);
     }
     #cookieContent img {
         width: 60px;
@@ -601,9 +629,9 @@ header {
     }
     #acceptCookie,
     #refusedCookie {
-        width: 150px;
-        height: 40px;
-        font-size: 18px;
+        width: 100px;
+        height: 30px;
+        font-size: var(--text-sm);
         font-weight: 500;
     }
 }

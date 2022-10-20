@@ -1,0 +1,51 @@
+/******* CSS NAVBAR *********/
+/* color navbar */
+.navbar {
+    background-color: rgb(69, 102, 102);
+}
+
+/* setting navbar-brand */
+.navbar-brand {
+    color: #fff !important;
+    font-size: var(--text-5xl) !important ;
+    font-family: "Kaushan Script" !important;
+    transition: all 0.4s ease;
+}
+
+/* setting animation resize navbar */
+.navbar.resize {
+    height: auto;
+    opacity: 0.9;
+    transition: all 0.4s ease;
+}
+.navbar.resize .navbar-brand {
+    font-size: 27px !important;
+    transition: all 0.4s ease;
+}
+.navbar.resize a {
+    font-size: 18px;
+    transition: all 0.4s ease;
+} /* ---------------------- */
+
+.navbar-nav {
+    margin-left: auto;
+}
+.nav-item {
+    margin-right: 20px;
+}
+
+/* setting a */
+.nav-link {
+    color: #fff !important;
+    font-family: "Lato" !important;
+    font-size: 22px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+.dropdown-item {
+    color: rgb(15, 15, 15) !important;
+    font-family: "Lato" !important;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* ----------- */

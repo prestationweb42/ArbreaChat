@@ -133,9 +133,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     height: 95vh;
-    padding-left: calc(3rem + 4vw);
 }
 .heroP {
     width: 80%;
@@ -157,6 +156,9 @@ header {
 }
 .btn-center a {
     font-size: var(--text-xl);
+}
+.btn-center a:nth-child(2) {
+    margin-left: var(--space-12);
 }
 
 /* responsive header */
@@ -213,6 +215,9 @@ header {
     }
     .btn-center a {
         font-size: var(--text-sm);
+    }
+    .btn-center a:nth-child(2) {
+        margin-left: 0;
     }
 }
 

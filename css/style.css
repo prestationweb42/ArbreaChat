@@ -60,7 +60,8 @@ html {
 }
 /*=== setting header ===*/
 header {
-    background: url(../img/bgphotshop.png);
+    background-image: url('../img/cat-tree.mp4');
+    /* background: url('https://www.youtube.com/watch?v=ujDLmhfwzP4'); */
     background-size: cover;
     background-position: center;
     height: 95vh;
@@ -115,6 +116,16 @@ header {
     font-weight: 500;
 }
 /* ----------- */
+
+/* setting video */
+.heroVideo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    filter: brightness(40%);
+}
 
 /* Setting txt */
 .text-intro {

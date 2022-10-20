@@ -1,4 +1,4 @@
- html {
+html {
     scroll-behavior: smooth;
     font-family: "Lato", sans-serif;
 }
@@ -110,51 +110,6 @@ header {
     .nav-item a {
         font-size: 18px !important;
         font-weight: 500;
-    }
-}
-
-/*=== setting scroll to top ===*/
-/* btn scrollup */
-.btn-scrollup {
-    width: 90px;
-    height: 90px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1000;
-    transition: all 0.5s ease-in-out;
-}
-.icone {
-    width: 60px;
-}
-.btn-scrollup.active {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
-}
-/* responsive scrollup */
-@media screen and (max-width: 550px) {
-    .btn-scrollup {
-        width: 60px;
-        height: 60px;
-    }
-    .icone {
-        width: 50px;
-    }
-    .btn-scrollup.active {
-        visibility: visible;
-        opacity: 1;
     }
 }
 
@@ -463,7 +418,7 @@ header {
 }
 
 /* Show scrolltop */
-.active {
+.showScrolltop {
     visibility: visible;
 }
 

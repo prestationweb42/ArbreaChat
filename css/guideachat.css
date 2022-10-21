@@ -10,13 +10,14 @@
     --main-gray: #aaa;
     --main-shadow: #292929;
     --dark-yellow: #f4cb38;
+    --amazon-orange-star: #ffa41c; /* Stars */
     --amazon-orange-dark: #c45500; /* Encart */
     --amazon-yellow: #f7ca00; /* BTN */
     --amazon-orange: #fa8900; /* BTN */
 
     /* Fonts */
-    --font-title: "Abril Fatface", cursive;
-    --font-base: "Poppins", sans-serif;
+    --font-title: Kaushan Script, serif;
+    --font-base: Lato, sans-serif;
 
     /* Font-size */
     --size-title: calc(2.5rem + 3.5vw);
@@ -63,7 +64,7 @@ html {
 
 /*=== setting Cartes ===*/
 #prix {
-    height: 100vh;
+    min-height: 100vh;
     border-top: 1px dashed #000;
 }
 
@@ -71,7 +72,10 @@ html {
     font-size: calc(1.5rem + 2vw);
     padding-top: 100px;
     padding-bottom: 50px;
-    font-family: "Kaushan Script";
+    font-family: var(--font-base);
+}
+.offreH2 span {
+    font-weight: bold;
 }
 .card {
     width: 300px;
@@ -79,18 +83,17 @@ html {
     margin: 20px auto;
     position: relative;
     transition: 0.2s ease-in;
-    box-shadow: 5px 5px 10px #a7a5a5d4;
+    border: 1px solid var(--main-black);
 }
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 10px 15px 20px #2f2d2dee;
 }
 .card h2 {
     font-size: calc(0.7rem + 1vw);
     margin: 10px auto;
     position: relative;
     text-align: center;
-    font-family: "Lato";
+    font-family: var(--font-base);
 }
 #spanPrix {
     font-size: calc(0.9rem + 1vw);
@@ -104,8 +107,9 @@ html {
     background-color: rgba(216, 216, 216, 0.5);
 }
 
-.details {
-    font-size: 22px;
+.titleDetails,
+.textDetails {
+    font-size: var(--text-lg);
     text-align: center;
     line-height: 30px;
     font-family: "Lato";
@@ -114,29 +118,53 @@ html {
     background-color: #fff;
     transition: 0.2s ease-in;
 }
-.details:hover {
+.textDetails:hover {
     background-color: rgba(181, 208, 230, 0.5);
 }
-
-#btn a {
-    display: block;
-    position: relative;
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Lato", sans-serif;
-    /* text-decoration: none; */
-    
-    transition: all 0.2s ease-in;
-    background-color: var(--amazon-orange);
+.titleDetails {
+    font-size: var(--text-xl);
+    font-weight: bold;
 }
-#btn a:hover {
+
+.textDetails i {
+    color: var(--amazon-orange-star);
+}
+
+#btn-card a {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    font-size: var(--text-xl);
+    font-weight: bold;
+    font-family: var(--font-base);
+    color: var(--full-black);
+    background-color: var(--amazon-orange);
+    transition: all 0.2s ease-in;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#btn-card a:hover {
     color: #fff;
     background-color: var(--amazon-orange-dark);
     transition: all 0.2s ease-in;
+}
+#btn-card a img {
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--full-white);
+}
+#btn-card a i {
+    width: 20px;
+    height: 20px;
+    font-size: var(--text-xl);
+    font-weight: bold;
 }
 
 /* responsive */
@@ -151,7 +179,7 @@ html {
         width: 300px;
         margin: 0 auto;
     }
-    .details {
+    .textDetails {
         margin: 20px auto;
     }
 }

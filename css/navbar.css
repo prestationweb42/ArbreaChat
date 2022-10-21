@@ -48,4 +48,22 @@
     font-size: 22px;
     font-weight: 500;
 }
-/* ----------- */
+
+/* responsive header */
+@media screen and (max-width: 992px) {
+    /* setting nav */
+    .nav-item a {
+        font-size: 18px !important;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: var(--text-3xl) !important ;
+    }
+}
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: var(--text-2xl) !important ;
+    }
+}

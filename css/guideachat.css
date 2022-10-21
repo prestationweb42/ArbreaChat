@@ -76,6 +76,18 @@ html {
 .titleH2 span {
     font-weight: bold;
 }
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 576px) {
+    .guideachat-2050 {
+        height: auto;
+    }
+    .titleH2 {
+        font-size: var(--text-xl);
+        padding-bottom: var(--space-10);
+    }
+}
 /*--- setting Cards ---*/
 .card {
     width: 300px;
@@ -89,7 +101,11 @@ html {
 .card:hover {
     transform: translateY(-10px);
 }
-
+@media screen and (max-width: 576px) {
+    .card {
+        height: 800px;
+    }
+}
 /* setting header img */
 .header {
     width: 100%;
@@ -99,6 +115,16 @@ html {
 }
 .header img {
     width: 100%;
+}
+@media screen and (max-width: 576px) {
+    .header {
+        height: 200px;
+    }
+    .header img {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
 }
 
 /* setting details */
@@ -198,40 +224,4 @@ html {
     font-weight: bold;
 }
 
-/* responsive */
-@media screen and (max-width: 992px) {
-    #prix {
-        height: auto;
-    }
-    .card {
-        height: auto;
-    }
-    .imgHeader {
-        width: 300px;
-        margin: 0 auto;
-    }
-    .textDetails {
-        margin: 20px auto;
-    }
-}
-@media screen and (max-width: 768px) {
-    #prix {
-        height: auto;
-    }
-    .card {
-        width: 60%;
-    }
-}
-@media screen and (max-width: 576px) {
-    .card {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 400px) {
-    .card {
-        width: 100%;
-    }
-    .imgHeader {
-        width: 100%;
-    }
-}
+

@@ -129,24 +129,13 @@ header {
         justify-content: center;
         align-items: center;
     }
-    /* setting nav */
-    .nav-item a {
-        font-size: 18px !important;
-        font-weight: 500;
-    }
 }
 @media screen and (max-width: 768px) {
-    .navbar-brand {
-        font-size: var(--text-3xl) !important ;
-    }
     .btn-center a {
         font-size: var(--text-lg);
     }
 }
 @media screen and (max-width: 576px) {
-    .navbar-brand {
-        font-size: var(--text-2xl) !important ;
-    }
     .heroH1 {
         font-size: var(--text-2xl) !important ;
     }

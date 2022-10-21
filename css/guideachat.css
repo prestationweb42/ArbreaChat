@@ -224,13 +224,39 @@ html {
     font-weight: bold;
 }
 @media screen and (max-width: 576px) {
+    /* stars */
     .starsDetails {
         top: 470px;
     }
+    .starText {
+        font-size: var(--text-lg);
+    }
+    .starsDetails i {
+        font-size: var(--text-xl);
+    }
+    /* price */
     .price {
         top: 510px;
+        font-size: var(--text-lg);
+        font-weight: 400;
     }
+    .spanPrice {
+        font-size: var(--text-xl);
+        font-weight: bold;
+    }
+    /* btn */
     .btn-card a {
+        width: 200px;
+        height: 40px;
         top: 560px;
+        font-size: var(--text-lg);
+    }
+    .btn-card a img {
+        width: 25px;
+    }
+    .btn-card a i {
+        width: 20px;
+        height: 20px;
+        font-size: var(--text-xl);
     }
 }

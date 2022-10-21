@@ -10,6 +10,7 @@
     --main-gray: #aaa;
     --main-shadow: #292929;
     --dark-yellow: #f4cb38;
+    --amazon-orange-dark: #c45500; /* Encart */
     --amazon-yellow: #f7ca00; /* BTN */
     --amazon-orange: #fa8900; /* BTN */
 
@@ -116,30 +117,25 @@ html {
 .details:hover {
     background-color: rgba(181, 208, 230, 0.5);
 }
-/* setting btn */
-#btn {
-    background-color: #fff;
-    height: 80px;
-}
+
 #btn a {
     display: block;
     position: relative;
-    width: 120px;
+    width: 200px;
     height: 50px;
     margin: auto;
     font-size: 20px;
     text-align: center;
     line-height: 50px;
     font-family: "Lato", sans-serif;
-    text-decoration: none;
-    top: 10px;
-    border: 1px solid #22a7f0;
-    border-radius: 9999px;
+    /* text-decoration: none; */
+    
     transition: all 0.2s ease-in;
+    background-color: var(--amazon-orange);
 }
 #btn a:hover {
     color: #fff;
-    background-color: rgba(6, 136, 206, 0.8);
+    background-color: var(--amazon-orange-dark);
     transition: all 0.2s ease-in;
 }
 
@@ -152,7 +148,6 @@ html {
         height: auto;
     }
     .imgHeader {
-        display: block;
         width: 300px;
         margin: 0 auto;
     }

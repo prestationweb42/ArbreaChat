@@ -4,7 +4,7 @@
     /* palette couleur */
     --full-white: #fff;
     --main-white: #f1f1f1;
-    --shade-white: #b7b7b7;
+    --shade-white: #eeeeee;
     --full-black: #000000;
     --main-black: #333;
     --main-gray: #aaa;
@@ -67,6 +67,9 @@ html {
     min-height: 100vh;
     border-top: 1px dashed #000;
 }
+.guideachat-50100{
+    background-color: var(--shade-white);
+}
 .titleH2 {
     font-size: var(--text-3xl);
     padding-top: var(--space-96);
@@ -91,7 +94,7 @@ html {
 /*--- setting Cards ---*/
 .card {
     width: 300px;
-    height: 700px;
+    height: 600px;
     margin: 20px auto;
     position: relative;
     transition: 0.2s ease-in;
@@ -109,7 +112,7 @@ html {
 /* setting header img */
 .header {
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: relative;
     /* background-color: rgba(216, 216, 216, 0.5); */
 }

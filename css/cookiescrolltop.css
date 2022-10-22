@@ -153,3 +153,13 @@
 .showScrolltop {
     visibility: visible;
 }
+/* responsive scrollup */
+@media screen and (max-width: 576px) {
+    .scrolltop {
+        right: 2rem;
+        bottom: 2rem;
+    }
+    .scrolltop__icon {
+        font-size: 35px;
+    }
+}

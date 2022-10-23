@@ -91,16 +91,14 @@ html {
         padding-bottom: var(--space-10);
     }
 }
-/*--- setting Cards ---*/
-.card {
+/*--- setting cards ---*/
+.cards {
     max-width: 600px;
     min-width: 500px;
     height: 600px;
     margin: 0 auto;
     position: relative;
     transition: 0.2s ease-in;
-    /* border: 2px solid var(--main-gray); */
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,8 +120,6 @@ html {
 
 @media screen and (max-width: 576px) {
 }
-
-
 
 /* setting details card */
 .titleCard,
@@ -150,12 +146,12 @@ html {
     .petkitpura {
         min-height: 100vh;
     }
-    .card {
+    .cards {
         height: auto;
     }
 }
 @media screen and (max-width: 576px) {
-    .card {
+    .cards {
         height: auto;
     }
 }

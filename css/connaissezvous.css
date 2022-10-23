@@ -73,7 +73,7 @@ html {
 .titleH2 {
     font-size: var(--text-3xl);
     padding-top: var(--space-96);
-    padding-bottom: var(--space-20);
+    padding-bottom: var(--space-44);
     font-family: var(--font-base);
 }
 .titleH2 span {

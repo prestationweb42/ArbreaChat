@@ -63,7 +63,7 @@ html {
 }
 
 /*=== Setting Sections Guide Achat ===*/
-.guideachat-2050 {
+.petkitpura {
     min-height: 100vh;
     border-top: 1px dashed #000;
 }
@@ -93,51 +93,31 @@ html {
 }
 /*--- setting Cards ---*/
 .card {
-    width: 300px;
+    max-width: 600px;
+    min-width: 500px;
     height: 600px;
-    margin: 20px auto;
+    margin: 0 auto;
     position: relative;
     transition: 0.2s ease-in;
     border: 2px solid var(--main-gray);
     border-radius: 10px;
 }
-.card:hover {
-    transform: translateY(-10px);
-}
 
 /* setting header img */
 .header {
     width: 100%;
-    height: 250px;
+    height: 70%;
     position: relative;
 }
-.header p {
-    position: absolute;
-    top: var(--space-1);
-    right: 0px;
-    font-size: var(--text-xl);
-    font-weight: 700;
-    font-family: var(--font-base);
-    padding: var(--space-4);
-    color: var(--main-white);
-    border-radius: 5px;
-    background: var(--amazon-orange-dark);
-}
+
 .header img {
-    max-height: 100%;
+    width: 100%;
+    /* height: 100%; */
     object-fit: cover;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
-    .header {
-        height: 200px;
-    }
-    .header img {
-        height: 100%;
-        width: auto;
-        margin: 0 auto;
-    }
 }
 
 /* setting details */
@@ -145,135 +125,34 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
-    height: 190px;
+    height: 150px;
 }
+
 /* setting details card */
 .titleCard,
 .textDetails {
     font-size: var(--text-lg);
     font-family: var(--font-base);
     background-color: #fff;
+    margin: var(--space-10) 0;
     transition: 0.2s ease-in;
+    text-align: justify;
+    line-height: 1.1;
+}
+.textDetails span{
+    font-weight: bolder;
+    font-size: var(--text-xl);
 }
 .titleCard {
-    font-size: var(--text-xl);
-    font-weight: bold;
-}
-
-/* Setting stars */
-.starsDetails {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 470px;
-    transform: translate(-50%, -50%);
-}
-.starText {
-    font-size: var(--text-xl);
-    font-family: var(--font-base);
-    font-weight: bold;
-}
-.starsDetails i {
-    font-size: var(--text-2xl);
-    color: var(--amazon-orange-star);
-}
-
-/* setting price */
-.price {
-    position: absolute;
-    left: 50%;
-    top: 505px;
-    transform: translate(-50%, -50%);
-    font-size: var(--text-xl);
-    font-family: var(--font-base);
-    font-weight: 400;
-    text-align: center;
-}
-.spanPrice {
     font-size: var(--text-2xl);
     font-weight: bold;
-}
-
-/* setting btn */
-.btn-card a {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 50%;
-    top: 560px;
-    transform: translate(-50%, -50%);
-    font-size: var(--text-xl);
-    font-weight: bold;
-    font-family: var(--font-base);
-    color: var(--full-black);
-    background-color: var(--amazon-orange);
-    transition: all 0.2s ease-in;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.btn-card a:hover {
-    color: #fff;
-    background-color: var(--amazon-orange-dark);
-    transition: all 0.2s ease-in;
-}
-.btn-card a img {
-    width: 30px;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--full-white);
-}
-.btn-card a i {
-    width: 30px;
-    height: 30px;
-    font-size: var(--text-2xl);
-    font-weight: bold;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 576px) {
     .card {
         height: 550px;
-    }
-    /* stars */
-    .starsDetails {
-        top: 450px;
-    }
-    .starText {
-        font-size: var(--text-lg);
-    }
-    .starsDetails i {
-        font-size: var(--text-xl);
-    }
-    /* price */
-    .price {
-        top: 480px;
-        font-size: var(--text-lg);
-        font-weight: 400;
-    }
-    .spanPrice {
-        font-size: var(--text-xl);
-        font-weight: bold;
-    }
-    /* btn */
-    .btn-card a {
-        width: 200px;
-        height: 40px;
-        top: 520px;
-        font-size: var(--text-lg);
-    }
-    .btn-card a img {
-        width: 25px;
-    }
-    .btn-card a i {
-        width: 20px;
-        height: 20px;
-        font-size: var(--text-xl);
     }
 }

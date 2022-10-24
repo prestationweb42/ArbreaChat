@@ -247,8 +247,8 @@ html {
     align-items: center;
 }
 .btn-card a:hover {
-    color: #fff;
-    background-color: var(--amazon-orange-dark);
+    color: var(--main-black);
+    background-color: var(--amazon-orange);
     transition: all 0.2s ease-in;
 }
 .btn-card a img {

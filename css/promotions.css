@@ -2,6 +2,7 @@
 /* === root/html === */
 :root {
     /* palette couleur */
+    --red-crimson: #dc143c;
     --full-white: #fff;
     --main-white: #f1f1f1;
     --shade-white: #eeeeee;
@@ -15,7 +16,6 @@
     --amazon-yellow: #f7ca00; /* BTN */
     --amazon-orange: #fa8900; /* BTN */
     --amazon-green: #228b22; /* BTN */
-    
 
     /* Fonts */
     --font-title: Kaushan Script, serif;
@@ -113,7 +113,20 @@ html {
     height: 250px;
     position: relative;
 }
-.header p {
+.datelimite {
+    position: absolute;
+    font-size: var(--text-4xl);
+    font-weight: 900;
+    font-family: var(--font-base);
+    color: var(--red-crimson);
+    background: transparent;
+    top: var(--space-28);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    rotate: -30deg;
+    margin: 0 auto;
+}
+.topsale {
     position: absolute;
     top: var(--space-1);
     right: 0px;

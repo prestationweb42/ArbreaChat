@@ -173,6 +173,6 @@ html {
         font-size: var(--text-md);
     }
     .textDetails {
-        font-size: var(--text-sm);
+        font-size: var(--text-base);
     }
 }

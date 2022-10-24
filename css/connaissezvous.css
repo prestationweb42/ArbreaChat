@@ -93,7 +93,7 @@ html {
 }
 /*--- setting cards ---*/
 .cards {
-    max-width: 600px;
+    max-width: 640px;
     min-width: 500px;
     height: 600px;
     margin: 0 auto;
@@ -139,7 +139,7 @@ html {
 .titleCard {
     font-size: var(--text-2xl);
     font-weight: bold;
-    margin-top: 0;
+    margin-top: -5px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -97,7 +97,7 @@ html {
 .card {
     width: 300px;
     height: 600px;
-    margin: 20px auto;
+    margin: var(--space-16) auto;
     position: relative;
     transition: 0.2s ease-in;
     border: 3px solid var(--amazon-green);
@@ -113,16 +113,28 @@ html {
     height: 250px;
     position: relative;
 }
+.promo{
+    position: absolute;
+    top: var(--space-10);
+    left: 0;
+    font-size: var(--text-2xl);
+    font-weight: 900;
+    font-family: var(--font-base);
+    padding: 5px;
+    color: var(--full-white);
+    background: var(--amazon-green);
+    border-radius: 5px;
+}
 .datelimite {
     position: absolute;
+    top: var(--space-28);
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: var(--text-4xl);
     font-weight: 900;
     font-family: var(--font-base);
     color: var(--red-crimson);
     background: transparent;
-    top: var(--space-28);
-    left: 50%;
-    transform: translate(-50%, -50%);
     rotate: -30deg;
     margin: 0 auto;
 }

@@ -62,13 +62,10 @@ html {
     font-family: "Lato", sans-serif;
 }
 
-/*=== Setting Sections Guide Achat ===*/
+/*=== Setting Sections Petkit Pura ===*/
 .petkitpura {
     min-height: 100vh;
     border-top: 1px dashed #000;
-}
-.guideachat-50100 {
-    background-color: var(--shade-white);
 }
 .titleH2 {
     font-size: var(--text-3xl);
@@ -76,25 +73,10 @@ html {
     padding-bottom: var(--space-44);
     font-family: var(--font-base);
 }
-.titleH2 span {
-    font-weight: bold;
-}
 
-@media screen and (max-width: 1200px) {
-}
-@media screen and (max-width: 576px) {
-    .guideachat-2050 {
-        height: auto;
-    }
-    .titleH2 {
-        font-size: var(--text-xl);
-        padding-bottom: var(--space-10);
-    }
-}
 /*--- setting cards ---*/
 .cards {
     max-width: 640px;
-    min-width: 500px;
     height: 600px;
     margin: 0 auto;
     position: relative;
@@ -116,9 +98,6 @@ html {
     width: 100%;
     object-fit: cover;
     margin: 0 auto;
-}
-
-@media screen and (max-width: 576px) {
 }
 
 /* setting details card */
@@ -144,14 +123,56 @@ html {
 
 @media screen and (max-width: 1200px) {
     .petkitpura {
-        min-height: 100vh;
+        min-height: auto;
     }
     .cards {
         height: auto;
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     .cards {
-        height: auto;
+        width: 80%;
+    }
+    .cards:nth-child(2) {
+        margin-top: var(--space-16);
+    }
+    .titleH2 {
+        font-size: var(--text-2xl);
+        padding-top: var(--space-84);
+        padding-bottom: var(--space-20);
+    }
+    .titleCard {
+        font-size: var(--text-xl);
+        margin-top: var(--space-12);
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .cards{
+        width: 95%;
+    }
+    .titleH2 {
+        font-size: var(--text-xl);
+        padding-top: var(--space-60);
+    }
+    
+    .header img {
+        width: 100%;
+        /* object-fit: cover; */
+        margin: 0 auto;
+    }
+    .titleCard {
+        font-size: var(--text-lg);
+    }
+    .textDetails {
+        font-size: var(--text-md);
+    }
+}
+@media screen and (max-width: 350px) {
+    .titleCard {
+        font-size: var(--text-md);
+    }
+    .textDetails {
+        font-size: var(--text-sm);
     }
 }

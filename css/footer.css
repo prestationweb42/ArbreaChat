@@ -70,7 +70,7 @@ footer {
     background-color: var(--main-black);
 }
 footer p {
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
 }
 footer p a {
     display: inline;

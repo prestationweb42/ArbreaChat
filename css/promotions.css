@@ -100,7 +100,7 @@ html {
     margin: var(--space-16) auto;
     position: relative;
     transition: 0.2s ease-in;
-    border: 3px solid var(--amazon-green);
+    border: 2px solid var(--amazon-green);
     border-radius: 10px;
 }
 .card:hover {
